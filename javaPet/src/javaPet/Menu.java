@@ -7,11 +7,9 @@ public class Menu {
 	public static void main(String[] args) {
 		
 		Scanner leia = new Scanner(System.in);
-		
 		int opcao = 1;
 		
 		do {
-			
 			System.out.println("         *******************************************************");
             System.out.println("         *                                                     *");
             System.out.println("         *                 INSTITUTO JAVA PET                  *");

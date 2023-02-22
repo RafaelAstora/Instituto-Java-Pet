@@ -3,10 +3,6 @@
 bin/
 .settings/
 
-# Arquivos gerados pelo Eclipse
-.classpath
-.project
-
 #===========
 
 # Compiled class file
