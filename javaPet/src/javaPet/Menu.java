@@ -39,7 +39,7 @@ public class Menu {
 			System.out.println("Informe a opção desejada:");
 			opcao = leia.nextInt();
 			
-			if (opcao == 0) {
+			if (opcao == 0) { 
 				System.out.println("\nPrograma Finalizado - Instituto Java PET");
 				leia.close();
 				System.exit(0);
