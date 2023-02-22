@@ -2,12 +2,25 @@ package javaPet;
 
 import java.util.Scanner;
 
+import javaPet.model.Animal;
+import javaPet.model.Cachorro;
+import javaPet.model.Gato;
+
 public class Menu {
 
 	public static void main(String[] args) {
 		
 		Scanner leia = new Scanner(System.in);
 		int opcao = 1;
+		
+		Animal a1 = new Animal("Mel", 1, "SRD", 6, 10, "Fêmea", true);
+		a1.visualizar();
+		
+		Cachorro c1 = new Cachorro("Gibson", 2, "Poodle", 8, 7, "Macho", true, "Pequeno");
+		c1.visualizar();
+		
+		Gato g1 = new Gato("Gibson", 3, "Poodle", 8, 7, "Macho", true, true, false);
+		g1.visualizar();
 		
 		do {
 			System.out.println("         *******************************************************");

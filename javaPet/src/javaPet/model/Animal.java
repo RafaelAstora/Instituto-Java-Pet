@@ -9,11 +9,8 @@ public class Animal {
 	private double peso;
 	private String sexo;
 	private boolean aptoDoacao;
-	private String porte;
 	
-	
-	public Animal(String nome, int iD, String raca, double idade, double peso, String sexo, boolean aptoDoacao,
-			String porte) {
+	public Animal(String nome, int iD, String raca, double idade, double peso, String sexo, boolean aptoDoacao) {
 
 		this.nome = nome;
 		this.ID = iD;
@@ -22,7 +19,6 @@ public class Animal {
 		this.peso = peso;
 		this.sexo = sexo;
 		this.aptoDoacao = aptoDoacao;
-		this.porte = porte;
 	}
 	
 	public String getNome() {
@@ -67,12 +63,18 @@ public class Animal {
 	public void setAptoDoacao(boolean aptoDoacao) {
 		this.aptoDoacao = aptoDoacao;
 	}
-	public String getPorte() {
-		return porte;
-	}
-	public void setPorte(String porte) {
-		this.porte = porte;
-	}
 	
-	
+	public void visualizar(){
+		
+		System.out.println("");
+		System.out.println("Dados do Animal: ");
+		System.out.println("Nome: " + this.nome);
+		System.out.println("ID: " + this.ID);
+		System.out.println("Raça: " + this.raca);
+		System.out.println("Idade: " + this.idade);
+		System.out.println("Peso: " + this.peso);
+		System.out.println("Sexo: " + this.sexo);
+		System.out.println("Está apto para doação? " + this.aptoDoacao);
+		System.out.println("");
+	}
 }
