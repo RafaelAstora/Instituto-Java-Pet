@@ -1,20 +1,32 @@
 package javaPet;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import javaPet.model.Animal;
 import javaPet.model.Cachorro;
 import javaPet.model.Gato;
 
-public class Menu {
 
+public class Menu  {
+
+	static int id; 
+	
 	public static void main(String[] args) {
+   
+		ArrayList<Animal> animais = new ArrayList<Animal> ();
 		
 		Scanner leia = new Scanner(System.in);
-		int opcao = 1;
 		
-		Animal a1 = new Animal("Mel", 1, "SRD", 6, 10, "Fêmea", true);
-		a1.visualizar();
+		int opcao = 1;
+		int tipo;
+		double idade, peso;
+		String nome, raca, sexo, porte;
+		boolean aptoDoacao;
+		boolean felv,fiv;
+		
+		//Animal a1 = new Animal("Mel", 1, "SRD", 6, 10, "Fêmea", true);
+		//a1.visualizar();
 		
 		Cachorro c1 = new Cachorro("Gibson", 2, "Poodle", 8, 7, "Macho", true, "Pequeno");
 		c1.visualizar();
@@ -49,6 +61,36 @@ public class Menu {
 			switch(opcao) {
 			case 1:
 				System.out.println("Cadastrar novo animal:");
+				System.out.println(" ");
+				System.out.println("Insira o nome do animal:    ");
+				nome = leia.nextLine();
+				System.out.println("Insira a Raça:   ");
+				raca = leia.nextLine();
+                System.out.println("Insira a idade do animal:   ");
+                idade = leia.nextDouble();
+                leia.skip("\\R?");
+                System.out.println("Insira o sexo do animal:    ");
+				sexo = leia.nextLine();
+				System.out.println("Insira o peso do animal:    ");
+				peso = leia.nextDouble();
+				aptoDoacao = false;
+				
+				System.out.println("Digite 1 = Gato ou 2 = Cachorro");
+				tipo = leia.nextInt();
+				switch (tipo) {
+				case 1:
+					System.out.println("Ele é positivo para felv?");
+					felv = leia.nextBoolean();
+					System.out.println("Ele é positivo para fiv?");
+					fiv = leia.nextBoolean();
+						
+				case 2: 
+					System.out.println("Qual o porte do animal?");
+					porte = leia.nextLine();
+			
+				}
+				
+				//animais.add();
 				
 				break;
 				
@@ -85,5 +127,7 @@ public class Menu {
 		
 		//leia.close();
 	}
-
+		
 }
+
+

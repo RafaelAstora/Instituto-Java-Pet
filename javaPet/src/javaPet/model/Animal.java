@@ -1,6 +1,6 @@
 package javaPet.model;
 
-public class Animal {
+public  abstract class Animal  {
 
 	private String nome;
 	private int ID;
