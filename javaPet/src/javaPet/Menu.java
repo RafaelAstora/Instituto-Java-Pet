@@ -3,20 +3,20 @@ package javaPet;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import javaPet.controller.JavaPetController;
 import javaPet.model.Animal;
 import javaPet.model.Cachorro;
 import javaPet.model.Gato;
 
 public class Menu {
 
-	static int id;
 
 	public static void main(String[] args) {
 
-		ArrayList<Animal> animais = new ArrayList<Animal>();
-
+		JavaPetController Animais = new JavaPetController();
+	
 		Scanner leia = new Scanner(System.in);
-
+		int id = 0;
 		int opcao = 1;
 		int tipo;
 		double idade, peso;
@@ -89,11 +89,14 @@ public class Menu {
 					felv = leia.nextBoolean();
 					System.out.println("Ele é positivo para fiv?");
 					fiv = leia.nextBoolean();
+					
+					Animais.cadastrar( new Gato(nome,id, raca, idade, peso, sexo, aptoDoacao, fiv,felv));
 
 				case 2:
 					System.out.println("Qual o porte do animal?");
 					porte = leia.nextLine();
-
+					Animais.cadastrar( new Cachorro(nome,id, raca, idade, peso, sexo, aptoDoacao, porte));
+					
 				}
 
 				// animais.add();
