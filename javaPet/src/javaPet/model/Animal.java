@@ -2,6 +2,7 @@ package javaPet.model;
 
 public  abstract class Animal  {
 
+	// TODO Atualizar para definir como Gato/Cachorro
 	private String nome;
 	private int ID;
 	private String raca;

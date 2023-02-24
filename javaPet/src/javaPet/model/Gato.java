@@ -29,6 +29,7 @@ public class Gato extends Animal {
 	}
 	
 	public void visualizar(){
+		// TODO Atualizar para definir como Gato/Cachorro
 		super.visualizar();
 		System.out.println("O animal possui FeLV? " + felv);
 		System.out.println("O animal possui FIV? " + fiv);
