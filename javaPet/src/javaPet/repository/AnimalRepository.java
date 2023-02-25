@@ -9,5 +9,12 @@ public interface AnimalRepository {
 	public void buscar(int id);
 	public void atualizar(Animal animal);
 	public void apagar(int id);
+	
+	
+	
+	
+	
 
 }
+
+
