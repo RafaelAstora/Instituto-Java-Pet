@@ -47,11 +47,11 @@ public class Item {
 	
 	public void visualizar() {
 		
-		System.out.println(" Item ID " + this.iD);
-		System.out.println(" Nomde do Produto " + this.nomeDoproduto);
-		System.out.println(" Quantidade " + this.quantidade);
-		System.out.println(" Item ID " + this.iD);
-		System.out.println(" Item ID " + this.iD);
+		System.out.println(" Item ID: " + this.iD);
+		System.out.println(" Nomde do Produto: " + this.nomeDoproduto);
+		System.out.println(" Quantidade: " + this.quantidade);
+		System.out.println(" Peso: " + this.peso);
+		System.out.println(" Tipo: " + this.tipo);
 		
 	}
 	

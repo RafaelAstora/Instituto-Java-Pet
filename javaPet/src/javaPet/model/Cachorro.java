@@ -19,7 +19,7 @@ public class Cachorro extends Animal {
 	}
 	
 	public void visualizar(){
-		// TODO Atualizar para definir como Gato/Cachorro
+		System.out.println("Cachorro :p");
 		super.visualizar();
 		System.out.println("Porte: " + porte);
 	}
