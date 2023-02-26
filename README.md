@@ -1,29 +1,29 @@
-#Participantes
+# Participantes
 
-1. Rebeca Silva
-LinkedIn:https://www.linkedin.com/in/rebecasantana/
-Github:https://github.com/rebecasantana
+### João
+- [LinkedIn](<link do linkedin>).
+- [Github](<link do github>)
 
-1. Vitoria
-LinkedIn:
-Github:
+### Murilo
+- [LinkedIn](<link do linkedin>).
+- [Github](<link do github>)
 
-1. João
-LinkedIn:
-Github:
+### Natanael
+- [LinkedIn](https://www.linkedin.com/in/natanael-da-silva-9422b21b2/).
+- [Github](<link do github>)
 
-1. Rafael
-LinkedIn:
-Github:
+### Rafael
+- [LinkedIn](<link do linkedin>).
+- [Github](<link do github>)
 
-1. Natanael
-LinkedIn:https://www.linkedin.com/in/natanael-da-silva-9422b21b2/
-Github:
+### Rebeca Silva
+- [LinkedIn](https://www.linkedin.com/in/rebecasantana/).
+- [Github](https://github.com/rebecasantana)
 
-1. Murilo
-LinkedIn:
-Github:
+### Rony dos Santos Teles
+- [LinkedIn](<link do linkedin>).
+- [Github](https://github.com/ronyrst)
 
-1. Rony
-LinkedIn:
-Github:
+### Vitoria
+- [LinkedIn](<link do linkedin>).
+- [Github](<link do github>)
