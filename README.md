@@ -45,4 +45,4 @@ Em ordem alfabética:
 - [LinkedIn](https://www.linkedin.com/in/vitoria-f-park-busch-6a015019b/).
 - [Github](https://github.com/vfpark)
 
-background-color: #000000;
+
