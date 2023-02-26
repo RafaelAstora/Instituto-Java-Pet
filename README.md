@@ -36,7 +36,7 @@ Em ordem alfabética:
 ### Rony dos Santos Teles
 <img src="https://avatars.githubusercontent.com/u/41052229?v=4" alt="Rony" width="80" height="80">
 
-- [LinkedIn](<link do linkedin>).
+- [LinkedIn](#).
 - [Github](https://github.com/ronyrst)
 
 ### Vitoria Busch
