@@ -1,9 +1,9 @@
-![Instituto Java Pet](<link do logo do instituto>)
+![Instituto Java Pet]<img src="https://scontent.fcpq4-1.fna.fbcdn.net/v/t39.30808-6/333810050_1437549927052626_82872192393230383_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeGEeBKk4MFHDOP__6v8jRIhM8Ms2p8SXfMzwyzanxJd8_Z2O4YUW0d4BpKTenj9Zl7J03C3dPP6cnh_rfpnXFsL&_nc_ohc=kifjNlzftc0AX8Todkb&_nc_ht=scontent.fcpq4-1.fna&oh=00_AfCFsc--vgrPVBsyFM6HCdfRP91vBVDssMt8nFDMPnxKuQ&oe=64011561" alt="logo" width="80" height="80">
 
 # Participantes
 Em ordem alfabética:
 
-### João Kiala Vioka Panzo
+### João
 <img src="<link da imagem>" alt="João" width="80" height="80">
 
 - [LinkedIn](<link do linkedin>).
@@ -15,11 +15,11 @@ Em ordem alfabética:
 - [LinkedIn](<link do linkedin>).
 - [Github](<link do github>)
 
-### Natanael Bento
-<img src="https://avatars.githubusercontent.com/u/123839425?v=4" alt="Natanael" width="80" height="80">
+### Natanael
+<img src="<link da imagem>" alt="Natanael" width="80" height="80">
 
 - [LinkedIn](https://www.linkedin.com/in/natanael-da-silva-9422b21b2/).
-- [Github](https://github.com/natanael-bento)
+- [Github](<link do github>)
 
 ### Rafael
 <img src="<link da imagem>" alt="Rafael" width="80" height="80">
@@ -36,10 +36,10 @@ Em ordem alfabética:
 ### Rony dos Santos Teles
 <img src="https://avatars.githubusercontent.com/u/41052229?v=4" alt="Rony" width="80" height="80">
 
-- [LinkedIn](#).
+- [LinkedIn](<link do linkedin>).
 - [Github](https://github.com/ronyrst)
 
-### Vitoria Busch
+### Vitoria
 <img src="https://avatars.githubusercontent.com/u/101155320?s=400&u=2692782575be19e3363a668487c92170824e30d9&v=4" alt="Vitoria" width="80" height="80">
 
 - [LinkedIn](https://www.linkedin.com/in/vitoria-f-park-busch-6a015019b/).
