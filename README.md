@@ -3,7 +3,7 @@
 # Participantes
 Em ordem alfabética:
 
-### João
+### João Kiala Vioka Panzo
 <img src="<link da imagem>" alt="João" width="80" height="80">
 
 - [LinkedIn](<link do linkedin>).
