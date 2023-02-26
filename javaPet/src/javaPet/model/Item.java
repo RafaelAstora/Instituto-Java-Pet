@@ -3,14 +3,14 @@ package javaPet.model;
 public class Item {
 
 	private int iD;
-	private String nomeDoproduto;
+	private String nomeProduto;
 	private int quantidade;
 	private double peso;
 	private String tipo;
 
-	public Item(int iD, String nomeDoproduto, int quantidade, double peso, String tipo) {
+	public Item(int iD, String nomeProduto, int quantidade, double peso, String tipo) {
 		this.iD = iD;
-		this.nomeDoproduto = nomeDoproduto;
+		this.nomeProduto = nomeProduto;
 		this.quantidade = quantidade;
 		this.peso = peso;
 		this.tipo = tipo;
@@ -24,12 +24,12 @@ public class Item {
 		this.iD = iD;
 	}
 
-	public String getNomeDoproduto() {
-		return nomeDoproduto;
+	public String getNomeProduto() {
+		return nomeProduto;
 	}
 
-	public void setNomeDoproduto(String nomeDoproduto) {
-		this.nomeDoproduto = nomeDoproduto;
+	public void setNomeProduto(String nomeProduto) {
+		this.nomeProduto = nomeProduto;
 	}
 
 	public int getQuantidade() {
@@ -58,12 +58,19 @@ public class Item {
 
 	public void visualizar() {
 
-		System.out.println(" \n\nItem ID: " + this.iD);
-		System.out.println(" Nome do Produto: " + this.nomeDoproduto);
-		System.out.println(" Quantidade: " + this.quantidade);
-		System.out.println(" Peso: " + this.peso);
-		System.out.println(" Tipo: " + this.tipo);
-
+		System.out.println("");
+		System.out.println(this.nomeProduto);
+		for(int i = 0; i < this.nomeProduto.length(); i++)
+			System.out.printf("*");
+		
+		System.out.println("\nID: " + this.iD);
+		System.out.println("Tipo: " + this.tipo);
+		System.out.println("Quantidade: x" + this.quantidade);
+		if(this.peso != 0) {
+			System.out.println("Peso da unidade: " + this.peso + " kg");
+			System.out.println("Quantidade total: "  + (this.peso * this.quantidade) + " kg");
+		}
+		System.out.println("");
 	}
 
 }

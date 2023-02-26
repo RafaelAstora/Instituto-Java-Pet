@@ -1,6 +1,7 @@
 package javaPet.controller;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 import javaPet.model.Animal;
 import javaPet.repository.AnimalRepository;
@@ -8,21 +9,18 @@ import javaPet.repository.AnimalRepository;
 public class JavaPetController implements AnimalRepository {
 
 	ArrayList<Animal> animais = new ArrayList<Animal>();
+	
+	static Scanner leia = new Scanner(System.in);
 
 	@Override
 	public void cadastrar(Animal animal) {
 		animais.add(animal);
-	
-
 	}
 
 	@Override
 	public void listar() {
-		for (var animal : animais) {
-
+		for (var animal : animais)
 			animal.visualizar();
-		}
-
 	}
 
 	@Override
@@ -47,18 +45,31 @@ public class JavaPetController implements AnimalRepository {
 
 	@Override
 	public void apagar(int id) {
-
+		
+		int opcao;
+		
 		var animal = buscarNaCollection(id);
 
 		if (animal != null) {
-			// TODO Além de poder colocar aqui aqueles "Tem certeza de que deseja excluir?"
-			if (animais.remove(animal) == true)
-				System.out.println("O cadastro do animal de ID " + id + " foi excluído.");
+			System.out.println("Tem certeza que deseja excluir?");
+			System.out.println("Digite o número para a opção desejada: ");
+			System.out.println("1 - Sim");
+			System.out.println("2 - Não");
+			opcao = leia.nextInt();
+
+			if (opcao == 1) {
+				if (animais.remove(animal) == true)
+					System.out.println("O cadastro do animal com o ID número " + id + " foi excluído.");
+			} else
+				System.out.println("Exclusão cancelada.");
+			
 		} else
-			System.out.println("Não foi encontrado o ID " + id + " do animal informado na nossa base de dados.");
+			System.out.println("Não foi encontrado um animal cadastrado com o ID " + id + ".");
 	}
 
+	// **********************
 	// Métodos complementares
+	// **********************
 	public int gerarID() {
 		return animais.size() + 1;
 	}
@@ -86,9 +97,6 @@ public class JavaPetController implements AnimalRepository {
 		}
 		return "Erro";
 	}
-		
-		
-		 
 	
 	public Animal buscarNaCollection(int id) {
 		for (var animal : animais) {

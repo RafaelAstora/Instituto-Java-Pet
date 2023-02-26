@@ -1,8 +1,7 @@
 package javaPet.model;
 
 public  abstract class Animal  {
-
-	// TODO Atualizar para definir como Gato/Cachorro
+	
 	private String nome;
 	private int ID;
 	private String raca;
@@ -12,7 +11,6 @@ public  abstract class Animal  {
 	private boolean aptoDoacao;
 	
 	public Animal(String nome, int iD, String raca, double idade, double peso, String sexo, boolean aptoDoacao) {
-
 		this.nome = nome;
 		this.ID = iD;
 		this.raca = raca;
@@ -67,15 +65,21 @@ public  abstract class Animal  {
 	
 	public void visualizar(){
 		
-		System.out.println("");
-		System.out.println("Dados do Animal: ");
-		System.out.println("Nome: " + this.nome);
 		System.out.println("ID: " + this.ID);
-		System.out.println("Raça: " + this.raca);
-		System.out.println("Idade: " + this.idade);
-		System.out.println("Peso: " + this.peso);
+		System.out.println("Nome: " + this.nome);
 		System.out.println("Sexo: " + this.sexo);
-		System.out.println("Está apto para doação? " + this.aptoDoacao);
-		System.out.println("");
+		System.out.println("Raça: " + this.raca);
+		
+		if(this.idade >= 2)
+			System.out.println("Idade: " + this.idade + " anos");
+		else
+			System.out.println("Idade: " + this.idade + " ano");
+		
+		System.out.println("Peso: " + this.peso + " kg");
+		
+		if(this.aptoDoacao == true)
+			System.out.println("Disponível para adoção? Sim");
+		else
+			System.out.println("Disponível para adoção? Não");
 	}
 }

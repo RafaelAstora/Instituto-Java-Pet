@@ -29,9 +29,21 @@ public class Gato extends Animal {
 	}
 
 	public void visualizar() {
-		System.out.println("Gato :3");
+		System.out.println("");
+		System.out.println("***********************************");
+		System.out.println("              G A T O              ");
+		System.out.println("***********************************");
 		super.visualizar();
-		System.out.println("O Gato possui FeLV? " + felv);
-		System.out.println("O Gato possui FIV? " + fiv);
+		
+		if(this.felv == false && this.fiv == false)
+			System.out.println("FIV e FeLV negativo.");
+		else if(this.felv == true && this.fiv == true)
+			System.out.println("É FIV e FeLV positivo.");
+		else if(this.felv == true)
+			System.out.println("É FeLV positivo.");
+		else if(this.fiv == true)
+			System.out.println("È FIV positivo.");
+		
+		System.out.println("");
 	}
 }

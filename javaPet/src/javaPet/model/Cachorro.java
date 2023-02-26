@@ -19,8 +19,13 @@ public class Cachorro extends Animal {
 	}
 	
 	public void visualizar(){
-		System.out.println("Cachorro :p");
+		System.out.println("");
+		System.out.println("***********************************");
+		System.out.println("          C A C H O R R O          ");
+		System.out.println("***********************************");
+		
 		super.visualizar();
-		System.out.println("Porte: " + porte);
+		
+		System.out.println("Porte: " + this.porte);
 	}
 }

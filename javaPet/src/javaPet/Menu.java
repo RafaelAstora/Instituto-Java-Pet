@@ -293,58 +293,47 @@ public class Menu {
 
 	public static void keyPress() {
 		try {
-			// Possível TODO: Criar classe de cores
 			System.out.println("\n\nPressione Enter para Continuar...");
 			System.in.read();
 		} catch (IOException e) {
 			System.out.println("Você pressionou uma tecla diferente de enter!");
 		}
 	}
-
+	
+	// *****************************
+	// Estoque
+	// *****************************
+	
 	static public void estoqueMenu() {
 
 		EstoqueController itens = new EstoqueController();
+		
 		if (vez == 1) {
-			itens.cadastrar(new Item(itens.gerarID(), "Ração Magnus Premium Carne Para Cães Adultos", 30, 5,
-					itens.tipoItem(1)));
-			itens.cadastrar(new Item(itens.gerarID(), "Ração Bocão Premium Frango Para Cães Adultos", 10, 1,
-					itens.tipoItem(1)));
-			itens.cadastrar(new Item(itens.gerarID(), "Ração Foster Premium Carne Para Cães Filhotes", 18, 2,
-					itens.tipoItem(1)));
-			itens.cadastrar(
-					new Item(itens.gerarID(), "Ração Magnus Frango Para Cães Filhotes", 13, 2, itens.tipoItem(1)));
+			itens.cadastrar(new Item(itens.gerarID(), "Ração Magnus Premium Carne Para Cães Adultos", 30, 5, itens.tipoItem(1)));
+			itens.cadastrar(new Item(itens.gerarID(), "Ração Bocão Premium Frango Para Cães Adultos", 10, 1, itens.tipoItem(1)));
+			itens.cadastrar(new Item(itens.gerarID(), "Ração Foster Premium Carne Para Cães Filhotes", 18, 2, itens.tipoItem(1)));
+			itens.cadastrar(new Item(itens.gerarID(), "Ração Magnus Frango Para Cães Filhotes", 13, 2, itens.tipoItem(1)));
 
-			itens.cadastrar(
-					new Item(itens.gerarID(), "Ração Magnus Frango Para Gatos Filhotes", 13, 2, itens.tipoItem(1)));
-			itens.cadastrar(
-					new Item(itens.gerarID(), "Ração Foster Carne Para Gatos Adultos", 13, 2, itens.tipoItem(1)));
+			itens.cadastrar(new Item(itens.gerarID(), "Ração Magnus Frango Para Gatos Filhotes", 13, 2, itens.tipoItem(1)));
+			itens.cadastrar(new Item(itens.gerarID(), "Ração Foster Carne Para Gatos Adultos", 13, 2, itens.tipoItem(1)));
 
-			itens.cadastrar(
-					new Item(itens.gerarID(), "Granulado Sanitario Para Gatos PipiCat", 40, 12, itens.tipoItem(2)));
+			itens.cadastrar(new Item(itens.gerarID(), "Granulado Sanitario Para Gatos PipiCat", 40, 12, itens.tipoItem(2)));
 			itens.cadastrar(new Item(itens.gerarID(), "Areia Higienica Kets", 35, 10, itens.tipoItem(2)));
 
-			itens.cadastrar(new Item(itens.gerarID(), "Natu Verm - 4 Comprimidos", 0, 9, itens.tipoItem(3)));
-
-			itens.cadastrar(new Item(itens.gerarID(), "Sarniram - 30 ml", 0, 15, itens.tipoItem(3)));
-			vez = 2;
+			itens.cadastrar(new Item(itens.gerarID(), "Natu Verm - 4 Comprimidos", 9, 0, itens.tipoItem(3)));
+			itens.cadastrar(new Item(itens.gerarID(), "Sarniram - 30 ml", 15, 0, itens.tipoItem(3)));
+			vez += 1;
 		}
 
 		boolean loop = false;
 		String nome;
-		int id;
-		int quantidade;
+		int id, quantidade, tipo, opcao = 1;
 		double peso;
-		int tipo;
-
-		int opcao = 1;
 
 		do {
-
 			System.out.println("         *******************************************************");
 			System.out.println("         *                                                     *");
-			System.out.println("         *                                                     *");
 			System.out.println("         *                  ESTOQUE JAVA PET                   *");
-			System.out.println("         *                                                     *");
 			System.out.println("         *                                                     *");
 			System.out.println("         *******************************************************");
 			System.out.println("         *        1 - Cadastrar novo item                      *");
@@ -360,37 +349,41 @@ public class Menu {
 
 			switch (opcao) {
 
+			// ***************
 			// Cadastro
+			// ***************
 			case 1:
-				System.out.println("Cadastrar novo item:");
+				System.out.println("Cadastrar novo item.");
 				System.out.println("");
 
 				try {
-					System.out.println("Insira o nome do item:    ");
+					System.out.println("Insira o nome do item: ");
 					leia.skip("\\R?");
 					nome = leia.nextLine();
 
-					System.out.println("Insira o tipo do item:   ");
-					System.out.println("1 - Para alimento");
-					System.out.println("2 - Para produto de higiene");
-					System.out.println("3 - Para medicamento ");
-					leia.skip("\\R?");
+					System.out.println("Digite o número referente ao tipo de item: ");
+					System.out.println("1 - Alimento");
+					System.out.println("2 - Produto de higiene");
+					System.out.println("3 - Medicamento");
 					tipo = leia.nextInt();
 
-					System.out.println("Insira o peso do produto (kg):");
-					peso = leia.nextDouble();
+					if(tipo == 3)
+						peso = 0;
+					else {
+						System.out.println("Insira o peso do produto (em kg):");
+						peso = leia.nextDouble();
+					}
 
 					System.out.println("Insira a quantidade:");
 					quantidade = leia.nextInt();
 
-					itens.cadastrar(new Item(itens.gerarID(), nome, quantidade, peso, itens.tipoItem(tipo)));
-					loop = false;
+					itens.cadastrar(new Item( itens.gerarID(), nome, quantidade, peso, itens.tipoItem(tipo) ));
+					System.out.println("Item Adicionado");
+					
 				} catch (InputMismatchException e) {
-					System.out.println("Erro de entrada " + e);
-					loop = true;
-					tipo = 0;
-					peso = 0;
-					quantidade = 0;
+					System.out.println("\nATENÇÃO:");
+					System.out.println("Erro de entrada de dados: " + e);
+					System.out.println("Operação cancelada.");
 					leia.nextLine();
 
 				}
@@ -398,7 +391,9 @@ public class Menu {
 				keyPress();
 				break;
 
+			// ***************				
 			// Listar itens
+			// ***************
 			case 2:
 				System.out.println("Listar todos os produtos:");
 
@@ -407,21 +402,32 @@ public class Menu {
 				keyPress();
 				break;
 
+			// ***************
 			// Buscar item
+			// ***************
 			case 3:
-				System.out.println("Buscar item por ID:");
+				System.out.println("Buscar item por ID.");
 
-				System.out.println("Digite o ID desejado: ");
-				id = leia.nextInt();
-
-				itens.buscar(id);
+				try {
+					System.out.println("Digite o ID desejado: ");
+					id = leia.nextInt();
+					
+					itens.buscar(id);
+				} catch (InputMismatchException e) {
+					System.out.println("\nATENÇÃO:");
+					System.out.println("Erro de entrada de dados: " + e);
+					System.out.println("Operação cancelada.");
+					leia.nextLine();
+				}
 
 				keyPress();
 				break;
 
+			// ***************
 			// Atualizar
+			// ***************
 			case 4:
-				System.out.println("Atualizar itens:");
+				System.out.println("Atualizar item.");
 
 				try {
 					System.out.println("Digite o ID do item que deseja alterar: ");
@@ -434,21 +440,26 @@ public class Menu {
 						keyPress();
 						break;
 					}
+					
+					item.visualizar();
 
 					System.out.println("");
-					System.out.println("Insira o nome do item:    ");
+					System.out.println("Insira o nome do item:");
 					leia.skip("\\R?");
 					nome = leia.nextLine();
 
-					System.out.println("Insira o tipo do item:   ");
-					System.out.println("1 - Para alimento");
-					System.out.println("2 - Para produto de higiene");
-					System.out.println("3 - Para medicamento ");
-					leia.skip("\\R?");
+					System.out.println("Digite o número referente ao tipo de item: ");
+					System.out.println("1 - Alimento");
+					System.out.println("2 - Produto de higiene");
+					System.out.println("3 - Medicamento");
 					tipo = leia.nextInt();
 
-					System.out.println("Insira o peso do produto (kg):");
-					peso = leia.nextDouble();
+					if(tipo == 3)
+						peso = 0;
+					else {
+						System.out.println("Insira o peso do produto (em kg):");
+						peso = leia.nextDouble();
+					}
 
 					System.out.println("Insira a quantidade:");
 					quantidade = leia.nextInt();
@@ -456,31 +467,42 @@ public class Menu {
 					itens.atualizar(new Item(item.getiD(), nome, quantidade, peso, itens.tipoItem(tipo)));
 
 				} catch (InputMismatchException e) {
-					System.out.println("Erro de entrada " + e);
-					loop = true;
-					tipo = 0;
-					peso = 0;
-					quantidade = 0;
+					System.out.println("\nATENÇÃO:");
+					System.out.println("Erro de entrada de dados: " + e);
+					System.out.println("Operação cancelada.");
 					leia.nextLine();
 				}
 
 				keyPress();
 				break;
-
+				
+			// ***************
 			// Apagar
+			// ***************
 			case 5:
 				System.out.println("Apagar item.");
+				try {
+					System.out.println("Digite o ID: ");
+					id = leia.nextInt();
+	
+					itens.apagar(id);
+				} catch (InputMismatchException e) {
+					System.out.println("\nATENÇÃO:");
+					System.out.println("Erro de entrada de dados: " + e);
+					System.out.println("Operação cancelada.");
+					leia.nextLine();
+				}
 
-				System.out.println("Digite o ID: ");
-				id = leia.nextInt();
-
-				itens.apagar(id);
+				keyPress();
+				break;
+				
+			default:
+				System.out.println("Opção Inválida!");
 
 				keyPress();
 				break;
 			}
 
 		} while (opcao != 0);
-
 	}
 }
