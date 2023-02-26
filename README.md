@@ -1,3 +1,5 @@
+![Instituto Java Pet](<link do logo do instituto>)
+
 # Participantes
 Em ordem alfabética:
 
