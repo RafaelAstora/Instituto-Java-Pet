@@ -40,7 +40,7 @@ Em ordem alfabética:
 - [Github](https://github.com/ronyrst)
 
 ### Vitoria
-<img src="<link da imagem>" alt="Vitoria" width="80" height="80">
+<img src="https://avatars.githubusercontent.com/u/101155320?s=400&u=2692782575be19e3363a668487c92170824e30d9&v=4" alt="Vitoria" width="80" height="80">
 
-- [LinkedIn](<link do linkedin>).
-- [Github](<link do github>)
+- [LinkedIn](https://www.linkedin.com/in/vitoria-f-park-busch-6a015019b/).
+- [Github](https://github.com/vfpark)
