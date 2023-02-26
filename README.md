@@ -15,11 +15,11 @@ Em ordem alfabética:
 - [LinkedIn](<link do linkedin>).
 - [Github](<link do github>)
 
-### Natanael
-<img src="<link da imagem>" alt="Natanael" width="80" height="80">
+### Natanael Bento
+<img src="https://avatars.githubusercontent.com/u/123839425?v=4" alt="Natanael" width="80" height="80">
 
 - [LinkedIn](https://www.linkedin.com/in/natanael-da-silva-9422b21b2/).
-- [Github](<link do github>)
+- [Github](https://github.com/natanael-bento)
 
 ### Rafael
 <img src="<link da imagem>" alt="Rafael" width="80" height="80">
@@ -39,7 +39,7 @@ Em ordem alfabética:
 - [LinkedIn](<link do linkedin>).
 - [Github](https://github.com/ronyrst)
 
-### Vitoria
+### Vitoria Busch
 <img src="https://avatars.githubusercontent.com/u/101155320?s=400&u=2692782575be19e3363a668487c92170824e30d9&v=4" alt="Vitoria" width="80" height="80">
 
 - [LinkedIn](https://www.linkedin.com/in/vitoria-f-park-busch-6a015019b/).
