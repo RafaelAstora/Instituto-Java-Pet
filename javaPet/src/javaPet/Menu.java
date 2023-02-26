@@ -19,19 +19,14 @@ public class Menu {
 
 		JavaPetController animais = new JavaPetController();
 
-		int id, sexo;
-		int opcao = 1;
-		int tipo = 1, porte;
+		int id, sexo, opcao = 1, porte, tipo = 1, felv, fiv, trocaDoacao;
 		double idade, peso;
 		String nome, raca;
-		boolean aptoDoacao;
-		boolean felv, fiv, loop = false;
+		boolean aptoDoacao, loop = false;
 
-		animais.cadastrar(
-				new Cachorro("Gibson", animais.gerarID(), "Poodle", 8, 7, "Macho", true, animais.porteCachorro(1)));
+		animais.cadastrar(new Cachorro("Gibson", animais.gerarID(), "Poodle", 8, 7, "Macho", true, animais.porteCachorro(1)));
 		animais.cadastrar(new Gato("Mel", animais.gerarID(), "SRD", 3, 4.3, "Femea", true, true, false));
-		animais.cadastrar(new Cachorro("schwarzenegger", animais.gerarID(), "Dalmata", 5, 15, "Macho", false,
-				animais.porteCachorro(3)));
+		animais.cadastrar(new Cachorro("schwarzenegger", animais.gerarID(), "Dalmata", 5, 15, "Macho", false,animais.porteCachorro(3)));
 		animais.cadastrar(new Gato("SnowBell", animais.gerarID(), "Persa", 9, 12.3, "Macho", true, false, false));
 
 		do {
@@ -48,104 +43,115 @@ public class Menu {
 			System.out.println("         *                                                     *");
 			System.out.println("         *******************************************************");
 			System.out.println("         *        1 - Cadastrar novo animal                    *");
-			System.out.println("         *        2 - Listar todos animais                     *");
+			System.out.println("         *        2 - Listar todos os animais                  *");
 			System.out.println("         *        3 - Buscar animal por ID                     *");
 			System.out.println("         *        4 - Atualizar Dados do Animal                *");
 			System.out.println("         *        5 - Apagar Cadastro do Animal                *");
-			System.out.println("         *        6 - Estoque                                  *");
+			System.out.println("         *        6 - Acessar o menu de Estoque                *");
 			System.out.println("         *        0 - Sair                                     *");
 			System.out.println("         *******************************************************\n\n");
 			System.out.println("Informe a opção desejada:");
 			opcao = leia.nextInt();
+			System.out.println("");
 
 			if (opcao == 0) {
-				System.out.println("\nPrograma Finalizado - Instituto Java PET");
+				System.out.println("\nPrograma Finalizado.");
+				System.out.println("");
+				System.out.println("         Instituto Java Pet");
+				System.out.println("Tenha a classe de adotar com a gente!");
 				leia.close();
 				System.exit(0);
 			}
 
 			switch (opcao) {
 
+			// ***************
 			// Cadastro
+			// ***************
 			case 1:
 				System.out.println("Cadastrar novo animal:");
 				System.out.println("");
 
-				do {
-					try {
 
-						System.out.println("O que deseja cadastrar?");
-						System.out.println("Informe a opção desejada.");
-						System.out.println("1. Gato");
-						System.out.println("2. Cachorro");
-						tipo = leia.nextInt();
+				try {
 
-						System.out.println("Insira o nome do animal:    ");
-						leia.skip("\\R?");
-						nome = leia.nextLine();
-
-						System.out.println("Insira a Raça:   ");
-						leia.skip("\\R?");
-						raca = leia.nextLine();
-
-						System.out.println("Insira a idade do animal:   ");
-						idade = leia.nextDouble();
-
-						System.out.println("Insira o sexo do animal:    ");
-						System.out.println("1 - Para femea");
-						System.out.println("2 - Para macho");
-						sexo = leia.nextInt();
-
-						System.out.println("Insira o peso do animal (kg):    ");
-						peso = leia.nextDouble();
-						aptoDoacao = false;
-
-						switch (tipo) {
-						case 1:
-							System.out.println("Ele é positivo para felv?");
-							felv = leia.nextBoolean();
-							System.out.println("Ele é positivo para fiv?");
-							fiv = leia.nextBoolean();
-
-							animais.cadastrar(new Gato(nome, animais.gerarID(), raca, idade, peso,
-									animais.sexoAnimal(sexo), aptoDoacao, fiv, felv));
-							System.out.println("Pet Adicionado");
-							break;
-						case 2:
-							System.out.println("Qual o porte do cachorro?");
-							System.out.println("Insira a opção desejada:");
-							System.out.println("1. Pequeno");
-							System.out.println("2. Médio");
-							System.out.println("3. Grande");
-							porte = leia.nextInt();
-
-							animais.cadastrar(new Cachorro(nome, animais.gerarID(), raca, idade, peso,
-									animais.sexoAnimal(sexo), aptoDoacao, animais.porteCachorro(porte)));
-							System.out.println("Pet Adicionado");
-							break;
-						default:
-							System.out.println("Numero do animal não existe - Cadastro não realizado");
-
-						}
-
-						loop = false;
-					} catch (InputMismatchException e) {
-						System.out.println("Erro de entrada " + e);
-						loop = true;
-						idade = 0;
-						tipo = 0;
-						peso = 0;
-						sexo = 0;
-						opcao = 1;
-						leia.nextLine();
+					System.out.println("O que deseja cadastrar?");
+					System.out.println("Informe a opção desejada.");
+					System.out.println("1 - Gato");
+					System.out.println("2 - Cachorro");
+					tipo = leia.nextInt();
+					
+					if(tipo != 1 && tipo != 2) {
+						System.out.println("Opção inválida.");
+						System.out.println("Operação cancelada.");
+						keyPress();
+						break;
 					}
 
-				} while (loop);
+					System.out.println("Insira o nome do animal:");
+					leia.skip("\\R?");
+					nome = leia.nextLine();
+
+					System.out.println("Insira a raça:");
+					leia.skip("\\R?");
+					raca = leia.nextLine();
+
+					System.out.println("Insira a idade do animal (em anos):");
+					idade = leia.nextDouble();
+
+					System.out.println("Digite um número para indicar o sexo do animal:");
+					System.out.println("1 - Fêmea");
+					System.out.println("2 - Macho");
+					sexo = leia.nextInt();
+
+					System.out.println("Insira o peso do animal (em kg):");
+					peso = leia.nextDouble();
+					aptoDoacao = false;
+
+					switch (tipo) {
+					case 1:
+						System.out.println("\nO gato é positivo para FeLV?");
+						System.out.println("Digite o número referente à opção:");
+						System.out.println("1 - Sim");
+						System.out.println("2 - Não");
+						felv = leia.nextInt();
+						
+						System.out.println("\nO gato é positivo para FIV?");
+						System.out.println("Digite o número referente à opção:");
+						System.out.println("1 - Sim");
+						System.out.println("2 - Não");
+						fiv = leia.nextInt();
+
+						animais.cadastrar(new Gato(nome, animais.gerarID(), raca, idade, peso,
+								animais.sexoAnimal(sexo), aptoDoacao, animais.simOuNao(felv), animais.simOuNao(fiv)));
+						System.out.println("Pet Adicionado com sucesso!");
+						break;
+					case 2:
+						System.out.println("Qual o porte do cachorro?");
+						System.out.println("Insira a opção desejada:");
+						System.out.println("1. Pequeno");
+						System.out.println("2. Médio");
+						System.out.println("3. Grande");
+						porte = leia.nextInt();
+
+						animais.cadastrar(new Cachorro(nome, animais.gerarID(), raca, idade, peso,
+								animais.sexoAnimal(sexo), aptoDoacao, animais.porteCachorro(porte)));
+						System.out.println("Pet Adicionado com sucesso!");
+						break;
+					}
+				} catch (InputMismatchException e) {
+					System.out.println("\nATENÇÃO:");
+					System.out.println("Erro de entrada de dados: " + e);
+					System.out.println("Operação cancelada.");
+					leia.nextLine();
+				}
 
 				keyPress();
 				break;
 
+			// ***************
 			// Listar animais
+			// ***************
 			case 2:
 				System.out.println("Listar todos animais:");
 
@@ -154,120 +160,164 @@ public class Menu {
 				keyPress();
 				break;
 
+			// ***************
 			// Buscar animal
+			// ***************
 			case 3:
-				System.out.println("Buscar animal por ID:");
-
-				System.out.println("Digite o ID desejado: ");
-				id = leia.nextInt();
-
-				animais.buscar(id);
+				System.out.println("Buscar animal por ID.");
+				
+				try {
+					System.out.println("Digite o ID desejado: ");
+					id = leia.nextInt();
+	
+					animais.buscar(id);
+				} catch (InputMismatchException e) {
+					System.out.println("\nATENÇÃO:");
+					System.out.println("Erro de entrada de dados: " + e);
+					System.out.println("Operação cancelada.");
+					leia.nextLine();
+				}
 
 				keyPress();
 				break;
 
+			// ***************
 			// Atualizar
+			// ***************
 			case 4:
 				System.out.println("Atualizar dados do animal:");
 
-				do {
-					try {
-						System.out.println("\nDigite o ID que deseja alterar: ");
-						id = leia.nextInt();
 
-						var animal = animais.buscarNaCollection(id);
-						if (animal == null) {
-							System.out.println("ID não cadastrado na nossa base de dados.");
+				try {
+					System.out.println("\nDigite o ID que deseja alterar: ");
+					id = leia.nextInt();
 
-							keyPress();
-							break;
-						}
+					var animal = animais.buscarNaCollection(id);
+					if (animal == null) {
+						System.out.println("ID não cadastrado na nossa base de dados.");
 
-						System.out.println("");
-						System.out.println("Gato ou cachorro?");
-						System.out.println("Informe a opção desejada.");
-						System.out.println("1. Gato");
-						System.out.println("2. Cachorro");
-
-						tipo = leia.nextInt();
-
-						System.out.println("Insira o nome do animal:    ");
-						leia.skip("\\R?");
-
-						nome = leia.nextLine();
-						System.out.println("Insira a Raça:   ");
-						leia.skip("\\R?");
-
-						raca = leia.nextLine();
-						System.out.println("Insira a idade do animal:   ");
-
-						idade = leia.nextDouble();
-						System.out.println("Insira o sexo do animal:    ");
-						System.out.println("1 - Para femea");
-						System.out.println("2 - Para macho");
-						leia.skip("\\R?");
-
-						sexo = leia.nextInt();
-						System.out.println("Insira o peso do animal:    ");
-
-						peso = leia.nextDouble();
-
-						aptoDoacao = animal.isAptoDoacao();
-
-						switch (tipo) {
-						case 1:
-							System.out.println("Ele é positivo para felv?");
-							felv = leia.nextBoolean();
-
-							System.out.println("Ele é positivo para fiv?");
-							fiv = leia.nextBoolean();
-
-							animais.atualizar(new Gato(nome, animal.getID(), raca, idade, peso,
-									animais.sexoAnimal(sexo), aptoDoacao, fiv, felv));
-							System.out.println("Animal atualizado");
-							loop = false;
-							break;
-
-						case 2:
-							System.out.println("Qual o porte do cachorro?");
-							System.out.println("Insira a opção desejada:");
-							System.out.println("1. Pequeno");
-							System.out.println("2. Médio");
-							System.out.println("3. Grande");
-							porte = leia.nextInt();
-
-							animais.atualizar(new Cachorro(nome, animal.getID(), raca, idade, peso,
-									animais.sexoAnimal(sexo), aptoDoacao, animais.porteCachorro(porte)));
-							System.out.println("Animal atualizado");
-							loop = false;
-						default:
-							System.out.println("Numero do animal não existe - Atualização não realizada");
-
-							break;
-						}
-					} catch (InputMismatchException e) {
-						System.out.println("Erro de entrada " + e);
-						loop = true;
-						idade = 0;
-						tipo = 0;
-						peso = 0;
-						sexo = 0;
-						opcao = 1;
-						leia.nextLine();
+						keyPress();
+						break;
 					}
-				} while (loop);
+
+					animal.visualizar();
+					
+					System.out.println("");
+					System.out.println("É um gato ou cachorro?");
+					System.out.println("Informe a opção desejada.");
+					System.out.println("1. Gato");
+					System.out.println("2. Cachorro");
+
+					tipo = leia.nextInt();
+
+					if(tipo != 1 && tipo != 2) {
+						System.out.println("Opção inválida.");
+						System.out.println("Operação cancelada.");
+						keyPress();
+						break;
+					}
+					
+					System.out.println("Insira o nome do animal:");
+					leia.skip("\\R?");
+					nome = leia.nextLine();
+					
+					System.out.println("Insira a raça:");
+					leia.skip("\\R?");
+					raca = leia.nextLine();
+					
+					System.out.println("Insira a idade do animal (em anos):");
+					idade = leia.nextDouble();
+					
+					System.out.println("Digite um número para indicar o sexo do animal:");
+					System.out.println("1 - Fêmea");
+					System.out.println("2 - Macho");
+					sexo = leia.nextInt();
+
+					System.out.println("Insira o peso do animal:");
+					peso = leia.nextDouble();
+
+					aptoDoacao = animal.isAptoDoacao();
+					if(aptoDoacao == true) {
+						System.out.println("O animal está definido como apto a ser adotado. Deseja alterar?");
+						System.out.println("Digite o número referente à opção:");
+						System.out.println("1 - Sim");
+						System.out.println("2 - Não");
+						trocaDoacao = leia.nextInt();
+						
+						if(trocaDoacao == 1)
+							aptoDoacao = false;
+					}
+					else {
+						System.out.println("O animal está definido como NÃO apto a ser adotado. Deseja alterar?");
+						System.out.println("Digite o número referente à opção:");
+						System.out.println("1 - Sim");
+						System.out.println("2 - Não");
+						trocaDoacao = leia.nextInt();
+						
+						if(trocaDoacao == 1)
+							aptoDoacao = true;
+					}
+					
+					switch (tipo) {
+					case 1:
+						System.out.println("\nO gato é positivo para FeLV?");
+						System.out.println("Digite o número referente à opção:");
+						System.out.println("1 - Sim");
+						System.out.println("2 - Não");
+						felv = leia.nextInt();
+						
+						System.out.println("\nO gato é positivo para FIV?");
+						System.out.println("Digite o número referente à opção:");
+						System.out.println("1 - Sim");
+						System.out.println("2 - Não");
+						fiv = leia.nextInt();
+						
+						animais.atualizar(new Gato(nome, animal.getID(), raca, idade, peso, animais.sexoAnimal(sexo), 
+								aptoDoacao, animais.simOuNao(felv), animais.simOuNao(fiv)));
+						System.out.println("Animal atualizado com sucesso.");
+						break;
+
+					case 2:
+						System.out.println("Qual o porte do cachorro?");
+						System.out.println("Digite o número referente à opção:");
+						System.out.println("1 - Pequeno");
+						System.out.println("2 - Médio");
+						System.out.println("3 - Grande");
+						porte = leia.nextInt();
+
+						animais.atualizar(new Cachorro(nome, animal.getID(), raca, idade, peso, animais.sexoAnimal(sexo), 
+								aptoDoacao, animais.porteCachorro(porte)));
+						System.out.println("Animal atualizado com sucesso.");
+						break;
+					}
+				} catch (InputMismatchException e) {
+					System.out.println("\nATENÇÃO:");
+					System.out.println("Erro de entrada de dados: " + e);
+					System.out.println("Operação cancelada.");
+					leia.nextLine();
+				}
+				
 				keyPress();
 				break;
 
+			// ***************
 			// Apagar
+			// ***************
 			case 5:
-				System.out.println("Apagar cadastro do animal.");
+				System.out.println("Apagar cadastro de um animal.");
 
-				System.out.println("Digite o ID: ");
-				id = leia.nextInt();
-
-				animais.apagar(id);
-
+				try {
+					System.out.println("Digite o ID: ");
+					id = leia.nextInt();
+	
+					animais.apagar(id);
+				} catch (InputMismatchException e) {
+					System.out.println("\nATENÇÃO:");
+					System.out.println("Erro de entrada de dados: " + e);
+					System.out.println("Operação cancelada.");
+					leia.nextLine();
+				}
+				
 				keyPress();
 				break;
 
@@ -276,7 +326,6 @@ public class Menu {
 
 				estoqueMenu();
 
-				keyPress();
 				break;
 
 			default:
@@ -346,7 +395,11 @@ public class Menu {
 			System.out.println("Informe a opção desejada:");
 
 			opcao = leia.nextInt();
-
+			
+			if (opcao == 0) {
+				break;
+			}
+			
 			switch (opcao) {
 
 			// ***************

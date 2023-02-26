@@ -31,7 +31,7 @@ public class JavaPetController implements AnimalRepository {
 		if (animal != null)
 			animal.visualizar();
 		else
-			System.out.println("O animal de ID  " + id + " não foi localizado.");
+			System.out.println("Não há um animal cadastrado com o ID de número " + id + ".");
 	}
 
 	@Override
@@ -40,7 +40,7 @@ public class JavaPetController implements AnimalRepository {
 		var buscaAnimal = buscarNaCollection(animal.getID());
 
 		animais.set(animais.indexOf(buscaAnimal), animal);
-		System.out.println("O animal no ID " + animal.getID() + " foi atualizado.");
+		System.out.println("O animal do ID de número " + animal.getID() + " foi atualizado.");
 	}
 
 	@Override
@@ -51,6 +51,10 @@ public class JavaPetController implements AnimalRepository {
 		var animal = buscarNaCollection(id);
 
 		if (animal != null) {
+			
+			animal.visualizar();
+			System.out.println("");
+			
 			System.out.println("Tem certeza que deseja excluir?");
 			System.out.println("Digite o número para a opção desejada: ");
 			System.out.println("1 - Sim");
@@ -59,7 +63,7 @@ public class JavaPetController implements AnimalRepository {
 
 			if (opcao == 1) {
 				if (animais.remove(animal) == true)
-					System.out.println("O cadastro do animal com o ID número " + id + " foi excluído.");
+					System.out.println("O cadastro do animal com o ID de número " + id + " foi excluído.");
 			} else
 				System.out.println("Exclusão cancelada.");
 			
@@ -96,6 +100,14 @@ public class JavaPetController implements AnimalRepository {
 
 		}
 		return "Erro";
+	}
+	
+	public boolean simOuNao(int valor) {
+		
+		if(valor == 1)
+			return true;
+		else
+			return false;
 	}
 	
 	public Animal buscarNaCollection(int id) {
