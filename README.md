@@ -19,11 +19,11 @@ Em ordem alfabética:
 - [LinkedIn](<link do linkedin>).
 - [Github](<link do github>)
 
-### Natanael
-<img src="<link da imagem>" alt="Natanael" width="80" height="80">
+### Natanael Bento
+<img src="https://media.licdn.com/dms/image/D5603AQFdcKU_R2vmdg/profile-displayphoto-shrink_200_200/0/1677450576522?e=1683158400&v=beta&t=-n4wtLCgwD1d8jVLQXHiEUBbmHlXmyUJysp29h_Xwh8" alt="Natanael" width="80" height="80">
 
-- [LinkedIn](https://www.linkedin.com/in/natanael-da-silva-9422b21b2/).
-- [Github](<link do github>)
+- [LinkedIn](https://www.linkedin.com/in/natanael-da-silva-bento-9422b21b2/).
+- [Github](https://github.com/natanael-bento)
 
 ### Rafael
 <img src="<link da imagem>" alt="Rafael" width="80" height="80">
@@ -37,13 +37,13 @@ Em ordem alfabética:
 - [LinkedIn](https://www.linkedin.com/in/rebecasantana/).
 - [Github](https://github.com/rebecasantana)
 
-### Rony dos Santos Teles
+### Rony Teles
 <img src="https://avatars.githubusercontent.com/u/41052229?v=4" alt="Rony" width="80" height="80">
 
 - [LinkedIn](<link do linkedin>).
 - [Github](https://github.com/ronyrst)
 
-### Vitoria
+### Vitoria Busch
 <img src="https://avatars.githubusercontent.com/u/101155320?s=400&u=2692782575be19e3363a668487c92170824e30d9&v=4" alt="Vitoria" width="80" height="80">
 
 - [LinkedIn](https://www.linkedin.com/in/vitoria-f-park-busch-6a015019b/).
