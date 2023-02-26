@@ -1,7 +1,7 @@
 <img src="https://scontent.fcpq4-1.fna.fbcdn.net/v/t39.30808-6/333810050_1437549927052626_82872192393230383_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeGEeBKk4MFHDOP__6v8jRIhM8Ms2p8SXfMzwyzanxJd8_Z2O4YUW0d4BpKTenj9Zl7J03C3dPP6cnh_rfpnXFsL&_nc_ohc=kifjNlzftc0AX8Todkb&_nc_ht=scontent.fcpq4-1.fna&oh=00_AfCFsc--vgrPVBsyFM6HCdfRP91vBVDssMt8nFDMPnxKuQ&oe=64011561" alt="logo" width="150" height="150">
 
 body {
-background-color: red;
+background-color: white;
 }
 
 # Participantes
