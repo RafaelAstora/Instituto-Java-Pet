@@ -3,11 +3,11 @@
 # Participantes
 Em ordem alfabética:
 
-### João
-<img src="<link da imagem>" alt="João" width="80" height="80">
+### João Kiala
+<img src="https://media.licdn.com/dms/image/C4D03AQFkPU5dAp-BSw/profile-displayphoto-shrink_200_200/0/1619024653551?e=1683158400&v=beta&t=0eLapyb2eFxRdPAmMG8ijByXZRBjtgLRroz4pvkzhOo" alt="João" width="80" height="80">
 
-- [LinkedIn](<link do linkedin>).
-- [Github](<link do github>)
+- [LinkedIn](https://www.linkedin.com/in/jo%C3%A3o-kiala-vioka-panzo/).
+- [Github](https://github.com/Joaopanzo261)
 
 ### Murilo
 <img src="<link da imagem>" alt="Murilo" width="80" height="80">
