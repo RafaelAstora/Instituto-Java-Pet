@@ -17,7 +17,7 @@ LinkedIn:
 Github:
 
 1. Natanael
-LinkedIn:
+LinkedIn:https://www.linkedin.com/in/natanael-da-silva-9422b21b2/
 Github:
 
 1. Murilo
