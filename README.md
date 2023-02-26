@@ -10,10 +10,10 @@ Em ordem alfabética:
 - [Github](https://github.com/Joaopanzo261)
 
 ### Murilo
-<img src="<link da imagem>" alt="Murilo" width="80" height="80">
+<img src="#" alt="Murilo" width="80" height="80">
 
-- [LinkedIn](<link do linkedin>).
-- [Github](<link do github>)
+- [LinkedIn](#).
+- [Github](#)
 
 ### Natanael Bento
 <img src="https://media.licdn.com/dms/image/D5603AQFdcKU_R2vmdg/profile-displayphoto-shrink_200_200/0/1677450576522?e=1683158400&v=beta&t=-n4wtLCgwD1d8jVLQXHiEUBbmHlXmyUJysp29h_Xwh8" alt="Natanael" width="80" height="80">
@@ -22,10 +22,10 @@ Em ordem alfabética:
 - [Github](https://github.com/natanael-bento)
 
 ### Rafael
-<img src="<link da imagem>" alt="Rafael" width="80" height="80">
+<img src="#" alt="Rafael" width="80" height="80">
 
-- [LinkedIn](<link do linkedin>).
-- [Github](<link do github>)
+- [LinkedIn](#).
+- [Github](#)
 
 ### Rebeca Silva
 <img src="https://media.licdn.com/dms/image/D4D03AQEoqF6m23nkzg/profile-displayphoto-shrink_800_800/0/1664325285074?e=1683158400&v=beta&t=VzKKhh3o5bQV3IZAVH_0DY5aoUtzF8jInpdf9bW0bEM" alt="Rebeca" width="80" height="80">
@@ -36,7 +36,7 @@ Em ordem alfabética:
 ### Rony Teles
 <img src="https://avatars.githubusercontent.com/u/41052229?v=4" alt="Rony" width="80" height="80">
 
-- [LinkedIn](<link do linkedin>).
+- [LinkedIn](#).
 - [Github](https://github.com/ronyrst)
 
 ### Vitoria Busch
