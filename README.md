@@ -10,7 +10,7 @@ Em ordem alfabética:
 - [Github](https://github.com/Joaopanzo261)
 
 ### Murilo
-<img src="https://drive.google.com/file/d/1tiKB8Uhf6sJnXTVIKTxef4wudv68beBD/view" alt="Murilo" width="80" height="80">
+<img src="https://scontent.fcpq4-1.fna.fbcdn.net/v/t39.30808-6/331737156_743002804101405_4832101203691838322_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeEvoIRhYO_XAQnx-c4aPI3vps5gKixqB_mmzmAqLGoH-Y2NoCwWyE_sho00t-i0CwL5Xe7SsXND-4Bw2EXfsbNw&_nc_ohc=b7surhOswnsAX9Az11W&tn=XPTpbyG4hP0KBJW7&_nc_ht=scontent.fcpq4-1.fna&oh=00_AfCqojXhYp-zEo3wIUoAvBhKXEMR3mu7q2Qx0SS-aeDVyQ&oe=6400E775" alt="Murilo" width="80" height="80">
 
 - [LinkedIn](https://www.linkedin.com/in/murilo-ribeiro-528515156/).
 - [Github](https://github.com/MuRibeiro)
