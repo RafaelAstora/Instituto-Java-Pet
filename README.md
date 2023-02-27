@@ -12,8 +12,8 @@ Em ordem alfabética:
 ### Murilo
 <img src="#" alt="Murilo" width="80" height="80">
 
-- [LinkedIn](#).
-- [Github](#)
+- [LinkedIn](https://www.linkedin.com/in/murilo-ribeiro-528515156/).
+- [Github](https://github.com/MuRibeiro)
 
 ### Natanael Bento
 <img src="https://media.licdn.com/dms/image/D5603AQFdcKU_R2vmdg/profile-displayphoto-shrink_200_200/0/1677450576522?e=1683158400&v=beta&t=-n4wtLCgwD1d8jVLQXHiEUBbmHlXmyUJysp29h_Xwh8" alt="Natanael" width="80" height="80">
