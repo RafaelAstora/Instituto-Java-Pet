@@ -9,7 +9,7 @@ Em ordem alfabética:
 - [LinkedIn](https://www.linkedin.com/in/jo%C3%A3o-kiala-vioka-panzo/).
 - [Github](https://github.com/Joaopanzo261)
 
-### Murilo
+### Murilo Ribeiro
 <img src="https://scontent.fcpq4-1.fna.fbcdn.net/v/t39.30808-6/332125883_742962687243405_5530641279948414221_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeFFXMKlvPLiDFBLIzFqap__mEa1m2GSeQiYRrWbYZJ5CKTvELHEp_wEXOAtzqcDQJF3ftaZaMheB6z1gSmPcwNV&_nc_ohc=qsyghsW2xLMAX_r6Vf3&tn=XPTpbyG4hP0KBJW7&_nc_ht=scontent.fcpq4-1.fna&oh=00_AfCwKmuZIMQQoe2UqyJjZjNG04BhZnkKDuMNcpSr_LuMcg&oe=640151FA" alt="Murilo" width="80" height="80">
 
 - [LinkedIn](https://www.linkedin.com/in/murilo-ribeiro-528515156/).
@@ -21,7 +21,7 @@ Em ordem alfabética:
 - [LinkedIn](https://www.linkedin.com/in/natanael-da-silva-bento-9422b21b2/).
 - [Github](https://github.com/natanael-bento)
 
-### Rafael
+### Rafael Duarte
 <img src="https://scontent.fcpq4-1.fna.fbcdn.net/v/t39.30808-6/331296540_158255693335986_4181892346998459290_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeGPF6cxhfJTJo5WhAl5CCOYxSpbBORdhczFKlsE5F2FzPksECwLJjop9CV2pp-1DNqIbdqoAD0ELDOfLSAV2is4&_nc_ohc=6M9-soAUxUwAX_2yy0z&_nc_ht=scontent.fcpq4-1.fna&oh=00_AfA7CY6jJMCCcvy9lg338zGA6YQzqE2mXMWwh49q7Jo53Q&oe=640050F8" alt="Rafael" width="80" height="80">
 
 - [LinkedIn](#).
