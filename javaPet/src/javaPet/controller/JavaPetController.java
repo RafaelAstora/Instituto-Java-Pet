@@ -94,7 +94,7 @@ public class JavaPetController implements AnimalRepository {
 		
 		switch (valor) {
 		case 1:
-			return "Femea";
+			return "Fêmea";
 		case 2:
 			return "Macho";
 

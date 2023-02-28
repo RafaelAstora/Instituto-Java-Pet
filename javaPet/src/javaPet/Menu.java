@@ -374,7 +374,6 @@ public class Menu {
 			vez += 1;
 		}
 
-		boolean loop = false;
 		String nome;
 		int id, quantidade, tipo, opcao = 1;
 		double peso;

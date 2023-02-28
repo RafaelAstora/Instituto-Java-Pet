@@ -42,7 +42,7 @@ public class Gato extends Animal {
 		else if(this.felv == true)
 			System.out.println("É FeLV positivo.");
 		else if(this.fiv == true)
-			System.out.println("È FIV positivo.");
+			System.out.println("É FIV positivo.");
 		
 		System.out.println("");
 	}
